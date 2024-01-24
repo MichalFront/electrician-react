@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import '../Navbar.css'
-import logo from '../img/logo2.png'
+import '../css/Navbar.css'
+import logo from '../img/logo5.png'
 
 function Navbar(){
   const [active, setActive] = useState('nav_menu');
@@ -18,10 +18,11 @@ function Navbar(){
         <img src={logo} alt="logo" className="logo"></img>
       </a>
        <ul className={active}>
-        <li className="nav_item"><a href="#" className="nav_link">Home</a></li>
-        <li className="nav_item"><a href="#" className="nav_link">About</a></li>
-        <li className="nav_item"><a href="#" className="nav_link">Skills</a></li>
-        <li className="nav_item"><a href="#" className="nav_link">Portfolio</a></li>
+        <li className="nav_item"><a href="#" className="nav_link">Strona główna</a></li>
+        <li className="nav_item"><a href="#about" className="nav_link">O Nas</a></li>
+        <li className="nav_item"><a href="#" className="nav_link">Oferta</a></li>
+        <li className="nav_item"><a href="#" className="nav_link">Realizacje</a></li>
+        <li className="nav_item"><a href="#" className="nav_link">Kontakt</a></li>
        </ul>
        <div onClick={navToggle} className={toggleIcon}>
         <div className="line1"></div>
